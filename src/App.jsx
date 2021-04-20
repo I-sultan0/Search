@@ -36,17 +36,15 @@ const App = () => {
                         onClick={listOfItems}>
                         <SaveAltIcon />
                     </button>
-                    {/* <button onclick={printDiv('printableArea')} value="print a div!"><PrintIcon /></button> */}
-                    <ol>
+                    <ol >
 
                         {
                             items.map((itemVal) => {
                                 return (
-                                    <>
+                                    <div>
+                                        <li>{itemVal}</li>
 
-                                        <li >{itemVal}</li>
-                                        {/* <li id="printableArea">{itemVal}</li> */}
-                                    </>
+                                    </div>
                                 )
                             })
                         }
@@ -56,6 +54,7 @@ const App = () => {
             </div>
         </>
     )
+
 }
 
 export default App
